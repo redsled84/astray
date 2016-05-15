@@ -21,12 +21,10 @@ freely, subject to the following restrictions:
    distribution.
 ]]--
 
-local PATH = (...):match("(.-)[^%.]+$")
-
-local class = require(PATH .. 'MiddleClass')
-local Util = require(PATH .. 'util')
-local Point = require(PATH .. 'point')
-local Room = require(PATH .. 'room')
+local class = require 'astray.MiddleClass'
+local Util = require 'astray.util'
+local Point = require 'astray.point'
+local Room = require 'astray.room'
 
 -- Class
 local RoomGenerator = class("RoomGenerator")

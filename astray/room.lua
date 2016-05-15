@@ -21,11 +21,9 @@ freely, subject to the following restrictions:
    distribution.
 ]]--
 
-local PATH = (...):match("(.-)[^%.]+$")
-
-local class = require(PATH .. 'MiddleClass')
-local Cell = require(PATH .. 'cell')
-local Map = require(PATH .. 'map')
+local class = require 'astray.MiddleClass'
+local Cell = require 'astray.cell'
+local Map = require 'astray.map'
 
 -- Class
 local Room = class("Room", Map)

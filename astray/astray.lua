@@ -26,13 +26,11 @@ DirectionType = { North = 0, South = 1, East = 2, West = 3 }
 SideType = { Empty=1, Wall=2, Door=3 }
 MaxValue = 65535
 
-local PATH = (...):match("(.-)[^%.]+$")
-
-local class = require(PATH .. 'MiddleClass')
-local Point = require(PATH .. 'point')
-local RoomGenerator = require(PATH .. 'roomgenerator')
-local Dungeon = require(PATH .. 'dungeon')
-local DirectionPicker = require(PATH .. 'directionpicker')
+local class = require 'astray.MiddleClass'
+local Point = require 'astray.point'
+local RoomGenerator = require 'astray.roomgenerator'
+local Dungeon = require 'astray.dungeon'
+local DirectionPicker = require 'astray.directionpicker'
 
 -- Class
 local Astray = class("Astray")

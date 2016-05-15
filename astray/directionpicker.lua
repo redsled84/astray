@@ -21,10 +21,8 @@ freely, subject to the following restrictions:
    distribution.
 ]]--
 
-local PATH = (...):match("(.-)[^%.]+$")
-
-local class = require(PATH .. 'MiddleClass')
-local Util = require(PATH .. 'util')
+local class = require 'astray.MiddleClass'
+local Util = require 'astray.util'
 
 -- Class
 local DirectionPicker = class("DirectionPicker")

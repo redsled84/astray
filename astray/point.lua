@@ -21,9 +21,7 @@ freely, subject to the following restrictions:
    distribution.
 ]]--
 
-local PATH = (...):match("(.-)[^%.]+$")
-
-local class = require(PATH .. 'MiddleClass')
+local class = require 'astray.MiddleClass'
 
 -- Class
 local Point = class("Point")

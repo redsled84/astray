@@ -1,6 +1,4 @@
-local BASE = (...) .. '.'
-
 return {
-	Astray     = require(BASE .. 'astray'),
-	RoomGenerator   = require(BASE .. 'roomgenerator'),
+	Astray     = require 'astray.astray',
+	RoomGenerator   = require 'astray.roomgenerator'
 }
